@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { findAllInRenderedTree } from 'react-dom/test-utils';
 
 function paragraph(copy: string) {
 return (  <p>
@@ -12,21 +12,15 @@ const copy = "Edit <code>src/App.tsx</code> and save to reload.";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-       {paragraph(copy)}
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <div className="Input">
+        <label>Your comments here</label>
+          <input type="text"></input>
+      </div>
+       );
 }
+
+
+
+
 
 export default App;
