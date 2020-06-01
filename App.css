@@ -24,6 +24,12 @@
   color: white;
 }
 
+button {
+  size: 30px;
+  width: 60px;
+  background-color: blueviolet
+}
+
 .App-link {
   color: #61dafb;
 }
